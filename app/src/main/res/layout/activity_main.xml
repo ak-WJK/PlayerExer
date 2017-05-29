@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.atguigu.playerexer.MainActivity">
+
+    <include layout="@layout/titlebar" />
+
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_weight="1">
+
+    </FrameLayout>
+
+    <RadioGroup
+        android:id="@+id/rg_main"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:background="#87c2c2c2"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_locla_video"
+            style="@style/rb_style"
+            android:drawableTop="@drawable/rb_local_video_select"
+            android:text="本地视频" />
+
+        <RadioButton
+            android:id="@+id/rb_locla_audio"
+            style="@style/rb_style"
+            android:drawableTop="@drawable/rb_local_audio_select"
+            android:text="本地音频" />
+
+        <RadioButton
+            android:id="@+id/rb_net_video"
+            style="@style/rb_style"
+            android:drawableTop="@drawable/rb_net_video_select"
+            android:text="网络视频" />
+
+        <RadioButton
+            android:id="@+id/rb_listview"
+            style="@style/rb_style"
+            android:drawableTop="@drawable/rb_net_listview_select"
+            android:text="ListView" />
+
+        <RadioButton
+            android:id="@+id/rb_recyclerview"
+            style="@style/rb_style"
+            android:drawableTop="@drawable/rb_local_video_select"
+            android:text="RecyclerView" />
+    </RadioGroup>
+
+</LinearLayout>

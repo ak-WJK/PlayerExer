@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.atguigu.playerexer.view.TitleBar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="#1daffd">
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="23dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/ic_topbanner_logo" />
+
+    <TextView
+        android:clickable="true"
+        android:id="@+id/tv_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="8dp"
+        android:layout_weight="1"
+        android:background="@drawable/sousuokuang_bg_select"
+        android:drawableLeft="@drawable/sousuokuang_icon"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical"
+        android:hint="全网搜索"
+        android:lines="1"
+        android:textSize="9sp" />
+
+    <ImageView
+        android:id="@+id/iv_game"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/ic_topbanner_game" />
+
+    <ImageView
+        android:id="@+id/iv_hostory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/ic_topbanner_record" />
+
+</com.atguigu.playerexer.view.TitleBar>
