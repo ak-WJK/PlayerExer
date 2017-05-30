@@ -1,5 +1,7 @@
 package com.atguigu.playerexer;
 
+import android.hardware.Sensor;
+import android.hardware.SensorManager;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
@@ -21,6 +23,7 @@ import java.util.ArrayList;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import fm.jiecao.jcvideoplayer_lib.JCVideoPlayer;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -48,6 +51,9 @@ public class MainActivity extends AppCompatActivity {
 
     private ArrayList<BaseFragment> fragments;
     private int position;
+    private SensorManager sensorManager;
+    private JCVideoPlayer.JCAutoFullscreenListener autoFullscreenListener;
+    private Sensor defaultSensor;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -66,6 +72,20 @@ public class MainActivity extends AppCompatActivity {
         rgMain.setOnCheckedChangeListener(new MyOnCheckedChangeListener());
 
         rgMain.check(R.id.rb_locla_video);
+
+
+        sensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
+        autoFullscreenListener = new JCVideoPlayer.JCAutoFullscreenListener();
+
+
+    }
+
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        defaultSensor = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
+        sensorManager.registerListener(autoFullscreenListener, defaultSensor, SensorManager.SENSOR_DELAY_NORMAL);
 
     }
 
@@ -124,6 +144,23 @@ public class MainActivity extends AppCompatActivity {
             fm.commit();
         }
 
+    }
+
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        sensorManager.unregisterListener(autoFullscreenListener);
+        JCVideoPlayer.releaseAllVideos();
+
+    }
+
+    @Override
+    public void onBackPressed() {
+        if (JCVideoPlayer.backPress()) {
+            return;
+        }
+        super.onBackPressed();
     }
 
 }

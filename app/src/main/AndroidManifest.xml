@@ -3,7 +3,6 @@
     package="com.atguigu.playerexer">
 
 
-
     2
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -27,6 +26,7 @@
         </activity>
         <activity
             android:name=".MainActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
             android:launchMode="singleTask">
 
         </activity>

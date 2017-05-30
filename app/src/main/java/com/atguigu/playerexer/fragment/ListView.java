@@ -55,7 +55,7 @@ public class ListView extends BaseFragment {
         x.http().get(request, new Callback.CommonCallback<String>() {
             @Override
             public void onSuccess(String result) {
-                LogUtils.e("TAG", "result" + result);
+//                LogUtils.e("TAG", "result" + result);
                 if (!TextUtils.isEmpty(result)) {
                     analysisJson(result);
                 }

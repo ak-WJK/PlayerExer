@@ -9,23 +9,23 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
-            android:background="#b1bcbcbc"
-            android:padding="4dp"
-            android:text="最热评论"
-            android:textSize="6sp" />
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="5dp"-->
+        <!--android:background="#b1bcbcbc"-->
+        <!--android:padding="4dp"-->
+        <!--android:text="最热评论"-->
+        <!--android:textSize="6sp" />-->
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
-            android:background="#96eaeaea"
-            android:padding="3dp"
-            android:text="楼主,要不是我玩过98,我差点就信了..."
-            android:textSize="11sp" />
+        <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="5dp"-->
+        <!--android:background="#96eaeaea"-->
+        <!--android:padding="3dp"-->
+        <!--android:text="楼主,要不是我玩过98,我差点就信了..."-->
+        <!--android:textSize="11sp" />-->
 
         <TextView
             android:id="@+id/tv_bottem_label"
@@ -39,7 +39,7 @@
 
     </LinearLayout>
 
-    <view
+    <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:layout_marginLeft="5dp"
@@ -52,6 +52,7 @@
         android:orientation="horizontal">
 
         <TextView
+            android:id="@+id/zan"
             android:layout_width="80dp"
             android:layout_height="30dp"
             android:layout_gravity="center"
@@ -64,13 +65,14 @@
             android:textColor="#000"
             android:textSize="9sp" />
 
-        <view
+        <View
             android:layout_width="1dp"
             android:layout_height="match_parent"
             android:layout_marginBottom="5dp"
             android:layout_marginTop="5dp" />
 
         <TextView
+            android:id="@+id/cai"
             android:layout_width="80dp"
             android:layout_height="30dp"
             android:layout_gravity="center"
@@ -83,13 +85,14 @@
             android:textColor="#000"
             android:textSize="9sp" />
 
-        <view
+        <View
             android:layout_width="1dp"
             android:layout_height="match_parent"
             android:layout_marginBottom="5dp"
             android:layout_marginTop="5dp" />
 
         <TextView
+            android:id="@+id/zhuanfa"
             android:layout_width="80dp"
             android:layout_height="30dp"
             android:layout_gravity="center"
@@ -102,7 +105,7 @@
             android:textColor="#000"
             android:textSize="9sp" />
 
-        <view
+        <View
             android:layout_width="1dp"
             android:layout_height="match_parent"
             android:layout_marginBottom="5dp"
@@ -123,10 +126,10 @@
 
     </LinearLayout>
 
-    <view
-        android:layout_width="match_parent"
-        android:layout_height="10dp"
-        android:background="#81cecece" />
+    <!--<view-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="10dp"-->
+    <!--android:background="#81cecece" />-->
 
 
 </LinearLayout>
