@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="#b1bcbcbc"
+            android:padding="4dp"
+            android:text="最热评论"
+            android:textSize="6sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="#96eaeaea"
+            android:padding="3dp"
+            android:text="楼主,要不是我玩过98,我差点就信了..."
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/tv_bottem_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:drawableLeft="@drawable/label_icon"
+            android:drawablePadding="5dp"
+            android:text="搞笑  吐槽  内涵  情感"
+            android:textSize="8sp" />
+
+    </LinearLayout>
+
+    <view
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#d1d1d1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:clickable="true"
+            android:drawableLeft="@drawable/zan_select"
+            android:drawablePadding="3dp"
+            android:gravity="center_vertical"
+            android:text="299"
+            android:textColor="#000"
+            android:textSize="9sp" />
+
+        <view
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:clickable="true"
+            android:drawableLeft="@drawable/cai_select"
+            android:drawablePadding="3dp"
+            android:gravity="center_vertical"
+            android:text="29"
+            android:textColor="#000"
+            android:textSize="9sp" />
+
+        <view
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:clickable="true"
+            android:drawableLeft="@drawable/posts_detail_forward_night"
+            android:drawablePadding="3dp"
+            android:gravity="center_vertical"
+            android:text="95"
+            android:textColor="#000"
+            android:textSize="9sp" />
+
+        <view
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp" />
+
+        <Button
+            android:id="@+id/btn_download"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:clickable="true"
+            android:drawablePadding="3dp"
+            android:gravity="center_vertical"
+            android:text="下载(原评论)"
+            android:textColor="#000"
+            android:textSize="9sp" />
+
+    </LinearLayout>
+
+    <view
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#81cecece" />
+
+
+</LinearLayout>
