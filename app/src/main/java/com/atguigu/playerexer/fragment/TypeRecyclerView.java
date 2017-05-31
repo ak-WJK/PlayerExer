@@ -9,7 +9,7 @@ import android.widget.TextView;
  * Created by Administrator on 2017/5/29.
  */
 
-public class RecyclerView extends BaseFragment {
+public class TypeRecyclerView extends BaseFragment {
 
 
     private TextView textView;

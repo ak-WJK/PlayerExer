@@ -1,1 +1,1 @@
-include ':app', 'JieCaoVideoPlayer', ':jcvideoplayer-lib'
+include ':app', 'JieCaoVideoPlayer', ':jcvideoplayer-lib', ':sample', ':photoview'

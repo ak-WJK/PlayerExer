@@ -13,11 +13,11 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 
 import com.atguigu.playerexer.fragment.BaseFragment;
-import com.atguigu.playerexer.fragment.ListView;
+import com.atguigu.playerexer.fragment.TypeListView;
 import com.atguigu.playerexer.fragment.LocalAudio;
 import com.atguigu.playerexer.fragment.LocalVideo;
 import com.atguigu.playerexer.fragment.NetVideo;
-import com.atguigu.playerexer.fragment.RecyclerView;
+import com.atguigu.playerexer.fragment.TypeRecyclerView;
 
 import java.util.ArrayList;
 
@@ -65,8 +65,8 @@ public class MainActivity extends AppCompatActivity {
         fragments.add(new LocalVideo());
         fragments.add(new LocalAudio());
         fragments.add(new NetVideo());
-        fragments.add(new ListView());
-        fragments.add(new RecyclerView());
+        fragments.add(new TypeListView());
+        fragments.add(new TypeRecyclerView());
 
 
         rgMain.setOnCheckedChangeListener(new MyOnCheckedChangeListener());

@@ -81,14 +81,16 @@ public class VideoHodler extends BaseHodler {
         if (data.getU() != null && data.getU().getHeader() != null && data.getU().getHeader().get(0) != null) {
             x.image().bind(ivHeadPortrait, data.getU().getHeader().get(0));
 
-            if (data.getU() != null && data.getU().getName() != null) {
+        }
 
-                tvUserName.setText(data.getU().getName());
-            }
-            tvVideoupdateTime.setText(data.getPasstime());
+        if (data.getU() != null && data.getU().getName() != null) {
 
-            //设置视频的标签
+            tvUserName.setText(data.getU().getName()+"");
+        }
 
+        tvVideoupdateTime.setText(data.getPasstime());
+
+            //设置标签
             List<ListViewBean.ListBean.TagsBean> tags = data.getTags();
             if (tags.size() > 0 && tags != null) {
                 StringBuffer stringBuffer = new StringBuffer();
@@ -107,7 +109,7 @@ public class VideoHodler extends BaseHodler {
 
             tvContext.setText(data.getText() + "_" + data.getType());
 
-        }
+
 
         boolean setUp = jcvVideoplayer.setUp(data.getVideo().getVideo().get(0), JCVideoPlayerStandard.SCREEN_LAYOUT_LIST, "");
         if (setUp) {

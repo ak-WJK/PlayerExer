@@ -90,7 +90,7 @@ public class ListViewAdapter extends BaseAdapter {
 
 
     @Override
-    public Object getItem(int position) {
+    public ListViewBean.ListBean getItem(int position) {
         return beanList.get(position);
     }
 

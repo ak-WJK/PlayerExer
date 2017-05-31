@@ -11,6 +11,8 @@
             <option value="$PROJECT_DIR$/JieCaoVideoPlayer" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/jcvideoplayer-lib" />
+            <option value="$PROJECT_DIR$/photoview" />
+            <option value="$PROJECT_DIR$/sample" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
