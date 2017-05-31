@@ -1,5 +1,7 @@
 package com.atguigu.playerexer.viewhodler;
 
+import android.content.Context;
+import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -7,12 +9,14 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.atguigu.playerexer.R;
+import com.atguigu.playerexer.bean.ListViewBean;
 
 /**
  * Created by Administrator on 2017/5/30.
  */
 
-public class BaseHodler {
+public class BaseHodler extends RecyclerView.ViewHolder {
+    public Context mContext;
 
 //    @BindView(R.id.iv_head_portrait)
 //    ImageView ivHeadPortrait;
@@ -43,8 +47,11 @@ public class BaseHodler {
     public TextView cai;
     public TextView zhuanfa;
     public Button btnDownload;
+    private ListViewBean.ListBean data;
+
 
     public BaseHodler(View convertView) {
+        super(convertView);
 
         ivHeadPortrait = (ImageView) convertView.findViewById(R.id.iv_head_portrait);
         tvUserName = (TextView) convertView.findViewById(R.id.tv_user_name);
@@ -58,9 +65,15 @@ public class BaseHodler {
         btnDownload = (Button) convertView.findViewById(R.id.btn_download);
 
 
+
+
+
     }
 
 
+    public void setData(ListViewBean.ListBean data) {
+        this.data = data;
+    }
 }
 
 

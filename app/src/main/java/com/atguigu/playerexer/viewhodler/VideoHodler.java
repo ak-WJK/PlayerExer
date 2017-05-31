@@ -73,7 +73,7 @@ public class VideoHodler extends BaseHodler {
 
     }
 
-
+    @Override
     public void setData(ListViewBean.ListBean data) {
         this.data = data;
 
@@ -85,30 +85,29 @@ public class VideoHodler extends BaseHodler {
 
         if (data.getU() != null && data.getU().getName() != null) {
 
-            tvUserName.setText(data.getU().getName()+"");
+            tvUserName.setText(data.getU().getName() + "");
         }
 
         tvVideoupdateTime.setText(data.getPasstime());
 
-            //设置标签
-            List<ListViewBean.ListBean.TagsBean> tags = data.getTags();
-            if (tags.size() > 0 && tags != null) {
-                StringBuffer stringBuffer = new StringBuffer();
-                for (int i = 0; i < tags.size(); i++) {
+        //设置标签
+        List<ListViewBean.ListBean.TagsBean> tags = data.getTags();
+        if (tags.size() > 0 && tags != null) {
+            StringBuffer stringBuffer = new StringBuffer();
+            for (int i = 0; i < tags.size(); i++) {
 
-                    stringBuffer.append(tags.get(i).getName() + " ");
-                }
-                tvBottemLabel.setText(stringBuffer.toString());
+                stringBuffer.append(tags.get(i).getName() + " ");
             }
+            tvBottemLabel.setText(stringBuffer.toString());
+        }
 
 
-            // 踩 赞 转发
-            zan.setText(data.getUp());
-            cai.setText(data.getDown() + "");
-            zhuanfa.setText(data.getForward() + "");
+        // 踩 赞 转发
+        zan.setText(data.getUp());
+        cai.setText(data.getDown() + "");
+        zhuanfa.setText(data.getForward() + "");
 
-            tvContext.setText(data.getText() + "_" + data.getType());
-
+        tvContext.setText(data.getText() + "_" + data.getType());
 
 
         boolean setUp = jcvVideoplayer.setUp(data.getVideo().getVideo().get(0), JCVideoPlayerStandard.SCREEN_LAYOUT_LIST, "");

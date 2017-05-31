@@ -36,4 +36,6 @@ dependencies {
     compile 'com.android.support:support-v4:22.0.0'
     compile project(':jcvideoplayer-lib')
     compile project(':photoview')
+
+    compile 'com.android.support:recyclerview-v7:23.3.0'
 }

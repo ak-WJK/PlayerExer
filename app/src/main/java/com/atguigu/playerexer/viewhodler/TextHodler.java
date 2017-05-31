@@ -29,6 +29,9 @@ public class TextHodler extends BaseHodler {
         tvContext = (TextView) convertView.findViewById(R.id.tv_context);
     }
 
+
+
+    @Override
     public void setData(ListViewBean.ListBean data) {
         this.data = data;
 
@@ -40,7 +43,7 @@ public class TextHodler extends BaseHodler {
 
         if (data.getU() != null && data.getU().getName() != null) {
 
-            tvUserName.setText(data.getU().getName()+"");
+            tvUserName.setText(data.getU().getName() + "");
         }
 
         tvVideoupdateTime.setText(data.getPasstime());

@@ -57,7 +57,7 @@ public class GifHodler extends BaseHodler {
 
 
     }
-
+    @Override
     public void setData(ListViewBean.ListBean data) {
         this.data = data;
 

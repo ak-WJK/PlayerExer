@@ -36,9 +36,9 @@ public class ImageHodler extends BaseHodler {
 
     }
 
+    @Override
     public void setData(ListViewBean.ListBean data) {
         this.data = data;
-
 
 
         if (data.getU() != null && data.getU().getHeader() != null && data.getU().getHeader().get(0) != null) {
@@ -48,7 +48,7 @@ public class ImageHodler extends BaseHodler {
 
         if (data.getU() != null && data.getU().getName() != null) {
 
-            tvUserName.setText(data.getU().getName()+"");
+            tvUserName.setText(data.getU().getName() + "");
         }
 
         tvVideoupdateTime.setText(data.getPasstime());
